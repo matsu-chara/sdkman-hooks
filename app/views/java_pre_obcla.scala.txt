@@ -18,7 +18,7 @@ function __sdkman_pre_installation_hook {
         return 1
     else
         cookie="$SDKMAN_DIR/var/cookie"
-        if [[ -f "$cookie" ]]; then rm "$cookie"; fi
+        if [[ -f "$cookie" ]]; then \rm "$cookie"; fi
         echo "oraclelicense=accept-securebackup-cookie" > "$cookie"
         echo ""
         __sdkman_echo_debug "Dropped cookie..."

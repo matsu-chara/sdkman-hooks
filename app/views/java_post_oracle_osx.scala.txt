@@ -15,7 +15,7 @@ function __sdkman_post_installation_hook {
     __sdkman_echo_green ""
     __sdkman_echo_green "Repackaging @{candidate.name} @version..."
 
-    rm -rf "$work_dir"
+    \rm -rf "$work_dir"
     mkdir -p "$work_dir"
 
     __sdkman_echo_green "Attaching to the DMG..."
@@ -42,11 +42,11 @@ function __sdkman_post_installation_hook {
 
     __sdkman_echo_green "Done repackaging..."
     __sdkman_echo_green "Cleaning up cookie..."
-    rm "$cookie_file"
+    \rm "$cookie_file"
 
     __sdkman_echo_debug "Cleaning up residual files..."
-    rm "$binary_input"
-    rm -rf "$work_dir"
+    \rm "$binary_input"
+    \rm -rf "$work_dir"
 }
 
 function __sdkman_validate_input_binary {

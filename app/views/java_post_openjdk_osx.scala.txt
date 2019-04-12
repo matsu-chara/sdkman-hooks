@@ -26,9 +26,9 @@ function __sdkman_post_installation_hook {
     __sdkman_echo_green "Done repackaging..."
 
     __sdkman_echo_green "Cleaning up residual files..."
-    rm "$binary_input"
-    rm -rf "$work_dir"
-    rm -rf "$work_jdk_dir"
+    \rm "$binary_input"
+    \rm -rf "$work_dir"
+    \rm -rf "$work_jdk_dir"
 }
 
 function __sdkman_validate_binary_input {
